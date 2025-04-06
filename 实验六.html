@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3225706029</title>
+    <title>3225706017 卢灵辉</title>
     <style>
         body {
             margin: 0;
@@ -15,7 +15,7 @@
         }
         
         header {
-            background-color: #1309de;
+            background-color: #0079c1;
             color: white;
             padding: 10px 20px;
             display: flex;
@@ -129,7 +129,7 @@
 </head>
 <body>
     <header>
-        <div class="header-title">长江流域地图</div>
+        <div class="header-title">地图</div>
         <calcite-button appearance="transparent" icon-start="information">About</calcite-button>
     </header>
     
@@ -162,8 +162,8 @@
             const view = arcgisMap.view;
 
             // 定义新的中心点坐标和缩放级别
-            const newCenter = [114.299925,29.310155];
-            const newZoom = 5;
+            const newCenter = [116.410018,39.912943];
+            const newZoom = 10;
 
             // 切换中心点
             view.goTo({
@@ -184,7 +184,7 @@
         arcgisMap.addEventListener("arcgisViewReadyChange", () => {
             // Add a feature layer
             const trailheadsLayer = new FeatureLayer({
-                url: "https://www.geosceneonline.cn/server/rest/services/Hosted/长江流域地图/FeatureServer",
+                url: "https://www.geosceneonline.cn/server/rest/services/Hosted/北京摆摊地点/FeatureServer",
                 popupTemplate: {
                     title: "Trailhead Information",
                     content: [{
